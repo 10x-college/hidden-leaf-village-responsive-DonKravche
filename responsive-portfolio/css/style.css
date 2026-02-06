@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 107, 26, 1);
+}
+
+.ninja-starts-here {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    gap: 15px;
+}
+
+.ninja-starts-here .img-title {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.img-title h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 100%;
+    color: rgba(255, 255, 255, 1);
+    font-family: "Inter", sans-serif;
+}
+
+.ninja-starts-here p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    line-height: 100%;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+
+.img-title img {
+    width: 24px;
+    height: 20px;
+    border: 2px;
+}
+
+.burger-menu {
+    display: flex;
+    background-color: rgba(26, 26, 26, 1);
+    padding: 10px 20px;
+    height: 71px;
+}
+
+.burger-menu .burger-menu-wrapper {
+    display: none;
+}
+
+.border-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(255, 107, 26, 1);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    border-radius: 8px;
+}
+
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 377px;
+    background-image: url('../images/konoha-banner.png');
+    background-color: rgba(42, 42, 42, 0.9);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    color: white;
+    gap: 20px;
+}
+
+.banner h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 100%;
+    font-family: "Inter", sans-serif;
+}
+
+.datetebayo p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100%;
+    font-family: "Inter", sans-serif;
+}
+
+.ninja-jutsu-description {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 20px;
+    gap: 15px;
+}
+
+.justu-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+    gap: 20px;
+    border-top: 4px solid rgba(255, 107, 26, 1);
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+.title-descrition {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.title-descrition img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.jutsu-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5%;
+    right: 5%;
+    height: 4px;
+    background: #ff6b00;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: rgba(26, 26, 26, 1);
+    color: white;
+    font-family: "Inter", sans-serif;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    height: 90px;
+    font-weight: 400;
+}
+
+
+@media (min-width: 768px) {
+    .ninja-starts-here {
+        flex-direction: column;
+        align-items: center;
+        margin: 40px;
+        gap: 20px;
+    }
+
+    .ninja-starts-here .img-title {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .img-title img {
+        width: 44px;
+        height: 48px;
+    }
+
+    .img-title h1 {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 40px;
+        line-height: 100%;
+        letter-spacing: 0%;
+
+    }
+
+    .img-title p {
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .burger-menu .border-button {
+        display: none;
+    }
+
+    .burger-menu .burger-menu-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .burger-menu .burger-menu-wrapper a {
+        color: white;
+        text-decoration: none;
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 17px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .burger-menu .burger-menu-wrapper a:nth-child(2) {
+        width: 103px;
+        height: 37px;
+        opacity: 1;
+        border-radius: 8px;
+        background: rgba(255, 107, 26, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner {
+        height: 530px;
+    }
+
+    .banner h1 {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 40px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .datetebayo p {
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .ninja-jutsu-description {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin: 50px;
+    }
+
+    .justu-card {
+        flex: 0 0 calc((100% - 30px) / 3);
+    }
+
+    .title-descrition img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .title-descrition h2 {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        white-space: nowrap;
+    }
+
+    .title-descrition p {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+
+    }
+
+    footer {
+        margin-top: 80px;
+    }
+}
